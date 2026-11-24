@@ -2,7 +2,7 @@
 """End-to-end quickstart: load a CSV, run a backtest, print the summary.
 
 Run from the python/ directory, with the package installed
-(pip install reamer_research-*.whl):
+(pip install reamer-research):
 
     python3 examples/quickstart_run.py
 

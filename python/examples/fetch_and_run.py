@@ -2,7 +2,7 @@
 """Download real bars from a vendor, run a backtest, print the summary.
 
 Run from the python/ directory, with the package installed
-(pip install reamer_research-*.whl):
+(pip install reamer-research):
 
     # Alpaca crypto: no account or key needed. One ticker over four weeks
     # fits inside Evaluation Mode; the multi-ticker runs below need a licence.

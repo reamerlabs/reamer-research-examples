@@ -4,8 +4,8 @@ trade diagnostics tool.
 Fades a close more than two ATRs from its 20-bar mean, targets the mean and
 stops two ATRs further out.
 
-    pip install reamer_research-*.whl     (once: the wheel in the kit's python/;
-                                           free download at reamerlabs.com/download)
+    pip install reamer-research           (once: from PyPI, or the wheel in the
+                                           kit's python/)
     python3 python/examples/quickstart.py [bars.csv] [--class | --object]
 
 rr.backtest takes a strategy in any of three forms, and this script has the

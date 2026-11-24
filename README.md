@@ -18,22 +18,23 @@ at 6,500 to 37,000. Versions are pinned and the raw results are public.
 
 ## Get the engine
 
-The engine is not in this repository. Download the Reamer Research kit,
-free and with no key, from
-**[reamerlabs.com/download](https://reamerlabs.com/download)**
-(direct mirror: [licenses.reamerlabs.com/evaluation/research](https://licenses.reamerlabs.com/evaluation/research)).
-It runs on Linux x86_64 (and Windows under WSL2) and macOS on Apple
-silicon, and holds the Python wheel, the C++ header and library, the
-documentation and `LICENSE.txt`.
-
-Then, with Python 3.9 or later:
+The engine is on PyPI as
+[reamer-research](https://pypi.org/project/reamer-research/), free and with
+no key. With Python 3.9 or later, on Linux x86_64 (and Windows under WSL2)
+or macOS on Apple silicon:
 
 ```bash
-pip install research-kit-*/python/reamer_research-*.whl
+pip install reamer-research
 git clone https://github.com/reamerlabs/reamer-research-examples
 cd reamer-research-examples/python
 python3 examples/quickstart.py
 ```
+
+Everything in `python/` runs on that package. The C++ examples need the
+Reamer Research kit, which holds the C++ header and library and the
+`reamer-license` tool that activates a licence, free from
+**[reamerlabs.com/download](https://reamerlabs.com/download)**.
+Documentation: [reamerlabs.com/docs](https://reamerlabs.com/docs).
 
 `quickstart.py` runs an ATR band reversion with a bracket on every entry
 over `sample_data/SAMPLE_5min.csv`, prints the summary and opens the run in
@@ -196,7 +197,7 @@ Questions: support@reamerlabs.com.
 
 The code in this repository is under the MIT License (`LICENSE`).
 
-The engine you download from reamerlabs.com is not: it is under the Reamer
-Labs Software License Agreement (`LICENSE.txt` in the kit, and in the
-wheel's `.dist-info/licenses/`), whose Section 2B grants Evaluation Mode
+The engine (the reamer-research package and the kit) is not: it is under
+the Reamer Labs Software License Agreement (`LICENSE.txt` in the kit, and in
+the wheel's `.dist-info/licenses/`), whose Section 2B grants Evaluation Mode
 without payment or a key.
